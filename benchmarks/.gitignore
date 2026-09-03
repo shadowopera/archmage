@@ -1,0 +1,6 @@
+# The corpus and everything archmage writes are generated artifacts: hundreds
+# of megabytes, reproducible from the fixed seed with ./step1.sh.
+/testdata/
+/output/
+/bench-report.md
+/magebench
