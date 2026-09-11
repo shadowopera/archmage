@@ -2,7 +2,7 @@
 
 ![Archmage](images/archmage.jpg)
 
-**Archmage** is a configuration solution for game development: specifications for how to structure config data, define fields, and fill in each value; pipelines that export runtime data and generate strongly typed code; multi-language SDKs for accessing that data at runtime; and a collaborative editing workflow for teams.
+**Archmage** is a configuration solution for game development: specifications for how to structure config data, define fields, and fill in each value; pipelines that export runtime data and generate strongly typed code; multi-language SDKs for loading and accessing that data at runtime; and a collaborative editing workflow for teams.
 
 - **Home** — <https://shadop.dev/archmage/>
 - **Quickstart** — <https://docs.shadop.dev/archmage/guides/quickstart/>
@@ -30,7 +30,7 @@ A field’s data type is not just a label. It comes with carefully designed fill
 - [Passive Types](https://docs.shadop.dev/archmage/specs/types/passive/) — require no manual input; values are derived automatically from references or context
 - [Compact Types](https://docs.shadop.dev/archmage/specs/types/compact/) — encode structured data into a single cell using a concise text format
 - [Multi-Column Types](https://docs.shadop.dev/archmage/specs/types/multi-column/) — span multiple columns to form a single logical field, with each column holding only one element
-- [Subtable Types](https://docs.shadop.dev/archmage/specs/types/subtable/) — define embedded subtables within a regular table
+- [Subtable Types](https://docs.shadop.dev/archmage/specs/types/subtable/) — each defines an embedded subtable for each config entry within a regular table
 - [Behavior Types](https://docs.shadop.dev/archmage/specs/types/behavior/) — act as functional directives that guide the processing carried out by the pipelines
 - [Non-Leaf Types](https://docs.shadop.dev/archmage/specs/types/non-leaf/) — apply exclusively to `[]` or `{}` tree-structured data nodes, determining how Archmage processes these nodes and their children
 
@@ -38,20 +38,29 @@ A field’s data type is not just a label. It comes with carefully designed fill
 
 Data export and code generation run as independent pipelines over the same config source.
 
-- [Data Export](https://docs.shadop.dev/archmage/specs/workflow/data-export/) — parses and validates config files and outputs the runtime data
-- [Code Generation](https://docs.shadop.dev/archmage/specs/workflow/code-generation/) — renders config structures and enum definitions into strongly typed code
+- [Data Export](https://docs.shadop.dev/archmage/specs/workflow/data-export/) — parses and validates config files and outputs the runtime data. A rich set of validation rules is provided out of the box
+- [Code Generation](https://docs.shadop.dev/archmage/specs/workflow/code-generation/) — renders enum definitions and config structures into strongly typed code
 - [Filtering](https://docs.shadop.dev/archmage/specs/workflow/filtering-mechanisms/) — decides, together with your build flags, which columns, rows, fields, entries, and nodes are included
 - [L10n Pipeline](https://docs.shadop.dev/archmage/specs/workflow/l10n-pipeline/) — collects localizable strings during export and aggregates them into files ready for translation
 - [Readability & AI](https://docs.shadop.dev/archmage/specs/workflow/readable/) — turns opaque exported values into text that is readable by humans and AI alike, alongside a schema describing every field
 
 ### Integrate
 
-Once runtime data is exported, your game loads it with a runtime [SDK](#sdks). The SDK parses files, assigns values to fields, and resolves references. You set up a few global callbacks.
+Since runtime data and generated config types originate from the same source, their structures naturally align. Once the data and the types are in place, you bring them together with a runtime [SDK](#sdks). The SDK parses each file using the corresponding config type, populates your `ConfigAtlas`, and resolves cross-table references. You can also set up a few global callbacks to make coding easier.
+
+### Develop
+
+Your game logic works with the `ConfigAtlas`. Every field is typed, and you enjoy the convenience built into the types, especially those the SDK provides. Take `spell.Rune`: it is a [`ref`](https://docs.shadop.dev/archmage/specs/types/basic/#ref) field, and `spell.Rune.Ref` gives you the rune's config entry directly, ready to use in your code. No ID lookup, no manual wiring.
 
 ### Collaborate
 
 - Real-time, multi-person editing in Google Sheets — no file locks, no binary merge conflicts
 - [Google Sheets](https://docs.shadop.dev/archmage/specs/workflow/team-collaboration/) pulled down into your repository as spreadsheet files, fitting into your team's existing version control workflow
+
+## Supported input file types
+
+- **Spreadsheets**  — `.xlsx`, `.xlsm`, `.csv`
+- **Tree-structured data** — `.yaml` or `.yml`, `.json`, `.json5`, `.js`, `.toml`, `.xml`
 
 ## SDKs
 
