@@ -2,7 +2,7 @@
 
 ![Archmage](images/archmage.jpg)
 
-**Archmage** is a configuration solution for game development: specifications for how to structure config data, define fields, and fill in each value; pipelines that export runtime data and generate strongly typed code; multi-language SDKs for loading and accessing that data at runtime; and a collaborative editing workflow for teams.
+**Archmage** is a configuration solution for game development. It brings together specifications on how to structure config data, define fields, and fill in values; pipelines that export runtime data and generate strongly-typed code; multi-language SDKs for loading and accessing that data at runtime; and a collaborative editing workflow for teams.
 
 - **Home** — <https://shadop.dev/archmage/>
 - **Quickstart** — <https://docs.shadop.dev/archmage/guides/quickstart/>
@@ -39,7 +39,7 @@ A field’s data type is not just a label. It comes with carefully designed fill
 Data export and code generation run as independent pipelines over the same config source.
 
 - [Data Export](https://docs.shadop.dev/archmage/specs/workflow/data-export/) — parses and validates config files and outputs the runtime data. A rich set of validation rules is provided out of the box
-- [Code Generation](https://docs.shadop.dev/archmage/specs/workflow/code-generation/) — renders enum definitions and config structures into strongly typed code
+- [Code Generation](https://docs.shadop.dev/archmage/specs/workflow/code-generation/) — renders enum definitions and config structures into strongly-typed code
 - [Filtering](https://docs.shadop.dev/archmage/specs/workflow/filtering-mechanisms/) — decides, together with your build flags, which columns, rows, fields, entries, and nodes are included
 - [L10n Pipeline](https://docs.shadop.dev/archmage/specs/workflow/l10n-pipeline/) — collects localizable strings during export and aggregates them into files ready for translation
 - [Readability & AI](https://docs.shadop.dev/archmage/specs/workflow/readable/) — turns opaque exported values into text that is readable by humans and AI alike, alongside a schema describing every field
