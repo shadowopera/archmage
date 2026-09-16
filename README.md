@@ -15,12 +15,13 @@
 
 You decide the layout of each set of config data and the data type of each field, as preferred.
 
-- [Regular Table](https://docs.shadop.dev/archmage/specs/spreadsheet/regular-table/) — standard table layout: config entries extend horizontally; fields extend vertically.
-- [Property Sheet](https://docs.shadop.dev/archmage/specs/spreadsheet/property-sheet/) — presents fields as key–value pairs, designed for global configs such as feature toggles.
-- [Index Table](https://docs.shadop.dev/archmage/specs/spreadsheet/index-table/) — selects which worksheets take part in the pipeline; useful for spreadsheet files containing multiple worksheets.
-- [Tree-Structured Data](https://docs.shadop.dev/archmage/specs/tree/overview/) — freeform nested data (YAML/JSON/...) for configs that do not fit neatly into rows and columns. When the structure satisfies certain criteria, Archmage treats it as a tree-backed regular table.
-- [Virtual Table](https://docs.shadop.dev/archmage/specs/spreadsheet/virtual-table/) — allows several regular tables to act as a unified logical table.
-- [Enum Definition](https://docs.shadop.dev/archmage/specs/enum/enum-definition/) — backs field definitions, value filling, and typed code generation for 12 languages.
+- [Regular Table](https://docs.shadop.dev/archmage/specs/spreadsheet/regular-table/) — standard table layout: config entries extend horizontally; fields extend vertically
+- [Property Sheet](https://docs.shadop.dev/archmage/specs/spreadsheet/property-sheet/) — presents fields as key–value pairs, designed for global configs such as feature toggles
+- [Index Table](https://docs.shadop.dev/archmage/specs/spreadsheet/index-table/) — selects which worksheets take part in the pipeline; useful for spreadsheet files containing multiple worksheets
+- [Tree-Structured Data](https://docs.shadop.dev/archmage/specs/tree/overview/) — freeform nested data (YAML/JSON/...) for configs that do not fit neatly into rows and columns. When the structure satisfies certain criteria, Archmage treats it as a tree-backed regular table
+- [Virtual Table](https://docs.shadop.dev/archmage/specs/spreadsheet/virtual-table/) — allows several regular tables to act as a unified logical table
+- [Data Types](https://docs.shadop.dev/archmage/specs/types/overview/) — a rich, unified type system for config fields, including 50+ data types in 7 categories
+- [Enum Definition](https://docs.shadop.dev/archmage/specs/enum/enum-definition/) — backs enum field definitions, value filling, and typed code generation for 12 languages
 
 ### Fill In
 
