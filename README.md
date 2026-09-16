@@ -49,7 +49,7 @@ Data export and code generation run as independent pipelines over the same confi
 
 Since runtime data and generated config types originate from the same source, their structures naturally align. Once the data and the types are in place, you bring them together with a runtime [SDK](#sdks). The SDK parses each file using the corresponding config type, populates your `ConfigAtlas`, and resolves cross-table references. You can also set up a few global callbacks to make coding easier.
 
-### Develop
+### Leverage
 
 Your game logic works with the `ConfigAtlas`. Every field is typed, and you enjoy the convenience built into the types, especially those the SDK provides. Take `spell.Rune`: it is a [`ref`](https://docs.shadop.dev/archmage/specs/types/basic/#ref) field, and `spell.Rune.Ref` gives you the rune's config entry directly, ready to use in your code. No ID lookup, no manual wiring.
 
