@@ -40,7 +40,7 @@ A field's data type is not just a label. It comes with carefully designed fill-i
 Data export and code generation run as independent pipelines over the same config source.
 
 - [Data Export](https://docs.shadop.dev/archmage/specs/workflow/data-export/) — parses and validates config files and outputs the runtime data. A rich set of validation rules is available out of the box.
-- [Code Generation](https://docs.shadop.dev/archmage/specs/workflow/code-generation/) — renders enum definitions and config structures into strongly-typed code emits a `ConfigAtlas`.
+- [Code Generation](https://docs.shadop.dev/archmage/specs/workflow/code-generation/) — renders enum definitions and config structures into strongly-typed code, and emits a `ConfigAtlas`.
 - [Filtering](https://docs.shadop.dev/archmage/specs/workflow/filtering-mechanisms/) — decides, together with your build flags, which columns, rows, fields, entries, and nodes are included.
 - [L10n Pipeline](https://docs.shadop.dev/archmage/specs/workflow/l10n-pipeline/) — collects localizable strings during export and aggregates them into files ready for translation.
 - [Readability & AI](https://docs.shadop.dev/archmage/specs/workflow/readable/) — turns opaque numbers into text that is readable by humans and AI agents, alongside a schema describing every field.
@@ -65,8 +65,8 @@ Your game logic works with the `ConfigAtlas`. Every field is typed, and you enjo
 
 ## SDKs
 
-- **C#** — [Github](https://github.com/shadowopera/sdk-cs) · [Overview](https://docs.shadop.dev/archmage/overview-cs/sdk-cs/) with Documentation about SDK, Unity, Unity Editor, Generated Code
-- **Go** — [Github](https://github.com/shadowopera/sdk-go) · [Overview](https://docs.shadop.dev/archmage/overview-go/sdk-go/) · [Documentation](https://pkg.go.dev/shadop.dev/pkg/sdk-go/archmage)
+- **C#** — [GitHub](https://github.com/shadowopera/sdk-cs) · [Overview](https://docs.shadop.dev/archmage/overview-cs/sdk-cs/) with Documentation about SDK, Unity, Unity Editor, Generated Code
+- **Go** — [GitHub](https://github.com/shadowopera/sdk-go) · [Overview](https://docs.shadop.dev/archmage/overview-go/sdk-go/) · [Documentation](https://pkg.go.dev/shadop.dev/pkg/sdk-go/archmage)
 
 ## About this repository
 
