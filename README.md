@@ -13,7 +13,7 @@
 
 ### Define
 
-You decide the layout of each set of config data and the data type of each field.
+You decide the shape of each config data set and the data type of each field.
 
 - [Regular Table](https://docs.shadop.dev/archmage/specs/spreadsheet/regular-table/) — standard table layout: config entries extend horizontally; fields extend vertically.
 - [Property Sheet](https://docs.shadop.dev/archmage/specs/spreadsheet/property-sheet/) — presents fields as key–value pairs, designed for global configs such as feature toggles.
