@@ -65,8 +65,9 @@ Your game logic works with the `ConfigAtlas`. Every field is typed, and you enjo
 
 ## SDKs
 
-- **C#** — [GitHub](https://github.com/shadowopera/sdk-cs) · [Overview](https://docs.shadop.dev/archmage/overview-cs/sdk-cs/) with Documentation about SDK, Unity, Unity Editor, Generated Code
-- **Go** — [GitHub](https://github.com/shadowopera/sdk-go) · [Overview](https://docs.shadop.dev/archmage/overview-go/sdk-go/) · [Documentation](https://pkg.go.dev/shadop.dev/pkg/sdk-go/archmage)
+- **C#** — [Overview](https://docs.shadop.dev/archmage/overview-cs/sdk-cs/) · [Documentation](https://docs.shadop.dev/archmage/overview-cs/sdk-cs/) · [Changelog](https://docs.shadop.dev/archmage/overview-cs/changelog/) · [GitHub](https://github.com/shadowopera/sdk-cs)
+- **GDScript** — [Overview](https://docs.shadop.dev/archmage/overview-gd/sdk-gd/) · [Documentation](https://docs.shadop.dev/archmage/overview-gd/sdk-gd/) · [Changelog](https://docs.shadop.dev/archmage/overview-gd/changelog/) · [GitHub](https://github.com/shadowopera/sdk-gd)
+- **Go** — [Overview](https://docs.shadop.dev/archmage/overview-go/sdk-go/) · [Documentation](https://pkg.go.dev/shadop.dev/pkg/sdk-go/archmage) · [Changelog](https://docs.shadop.dev/archmage/overview-go/changelog/) · [GitHub](https://github.com/shadowopera/sdk-go)
 
 ## About this repository
 
