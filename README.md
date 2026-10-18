@@ -2,7 +2,7 @@
 
 ![Archmage](images/archmage.jpg)
 
-**Archmage** is a configuration solution for game development. It brings together specifications on how to structure config data, define fields, and fill in values; pipelines that export runtime data and generate strongly-typed code; multi-language SDKs for loading and accessing that data at runtime; and a collaborative editing workflow for teams.
+**Archmage** is a configuration solution for game development. It brings together the following: specifications on how to structure config data, define fields, and fill in values; pipelines that export runtime data and generate strongly-typed code; multi-language SDKs for loading and accessing that data at runtime; and a collaborative editing workflow for teams.
 
 - **Home** — <https://shadop.dev/archmage/>
 - **Quickstart** — <https://docs.shadop.dev/archmage/guides/quickstart/>
