@@ -76,13 +76,9 @@ Archmage is closed source. This repository does not contain its source code.
 - [Issues](https://github.com/shadowopera/archmage/issues) — Bug reports and feature requests
 - [Discussions](https://github.com/shadowopera/archmage/discussions) — Community
 
-## Free and paid use
-
-Archmage is free to download and use. Free use is restricted. See [Pricing](https://shadop.dev/archmage/pricing/) for details.
-
 ## Cross-Language Enum Code Generation, Free and Unlimited
 
-Available to everyone, `archmage enum` operates completely outside the paid tiers, serving as a 100% unrestricted tool. One [enum definition](https://docs.shadop.dev/archmage/specs/enum/enum-definition/), one set of enum capabilities — Archmage carries them into 12+ programming languages, each rendered in that language's own idioms and type system.
+Available to everyone, `archmage enum` is completely free and fully unrestricted. One [enum definition](https://docs.shadop.dev/archmage/specs/enum/enum-definition/), one set of enum capabilities — Archmage carries them into 12+ programming languages, each rendered in that language's own idioms and type system.
 
 ### Definition
 
@@ -106,7 +102,3 @@ Available to everyone, `archmage enum` operates completely outside the paid tier
 - **Bitflag Enums**: Parses and formats flag combinations, e.g., `"frost, fire"`.
 - **AllValues**: Returns the full set of valid enum values as an ordered list.
 - **IsValid**: Checks if a given value corresponds to a defined enum item.
-
-## License
-
-Archmage is proprietary software. See [LICENSE](LICENSE).
