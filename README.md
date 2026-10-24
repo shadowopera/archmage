@@ -9,7 +9,34 @@
 - **Documentation** — <https://docs.shadop.dev/>
 - **Download** — [Releases](https://github.com/shadowopera/archmage/releases)
 
-## Features
+## Cross-Language Enum Code Generation, Free and Unlimited
+
+Available to everyone, `archmage enum` is completely free and fully unrestricted. One [enum definition](https://docs.shadop.dev/archmage/specs/enum/enum-definition/), one set of enum capabilities — Archmage carries them into 12+ programming languages, each rendered in that language's own idioms and type system.
+
+### Definition
+
+- **Flexible Underlying Types**: `int`, `int8/16/32/64`, `uint`, `uint8/16/32/64`.
+- **Conditional Generation**: Scenario flags for filtering enum types and enum items.
+- **Bitflags**: Bitwise-combinable enum types.
+- **Auto-Numbering**: `iota` auto-assigns values: 0, 1, 2, 3...; for bitflags: 0, 1, 2, 4, 8...
+- **External Types**: Same enum type: native in one language, external in another.
+
+### Generated Code
+
+- **Named Types**: Each enum type is defined as a named type.
+- **Typed Constants**: Each enum item is defined as a typed constant.
+- **Underlying Types**: From `int8` to `uint64`; parsing enforces the value range.
+- **Enum ↔ String Conversion**: In both directions — by default the item name, overridable in the definition.
+- **Multiple Parsing Formats**: Item name in any case, TypeName(n), decimal, and hex are all supported.
+- **Safe Parsing**: Failures trigger explicit errors or exceptions instead of silent zero values.
+- **JSON Integer Serialization**: Enum values serialize as integers in JSON.
+- **Sentinel**: Boundary markers such as `Count`, excluded from the valid values.
+- **Duplicate Values**: Multiple items can share the same integer value; all names remain valid for parsing.
+- **Bitflag Enums**: Parses and formats flag combinations, e.g., `"frost, fire"`.
+- **AllValues**: Returns the full set of valid enum values as an ordered list.
+- **IsValid**: Checks if a given value corresponds to a defined enum item.
+
+## Complete Features of Archmage
 
 ### Define
 
@@ -75,30 +102,3 @@ Archmage is closed source. This repository does not contain its source code.
 
 - [Issues](https://github.com/shadowopera/archmage/issues) — Bug reports and feature requests
 - [Discussions](https://github.com/shadowopera/archmage/discussions) — Community
-
-## Cross-Language Enum Code Generation, Free and Unlimited
-
-Available to everyone, `archmage enum` is completely free and fully unrestricted. One [enum definition](https://docs.shadop.dev/archmage/specs/enum/enum-definition/), one set of enum capabilities — Archmage carries them into 12+ programming languages, each rendered in that language's own idioms and type system.
-
-### Definition
-
-- **Flexible Underlying Types**: `int`, `int8/16/32/64`, `uint`, `uint8/16/32/64`.
-- **Conditional Generation**: Scenario flags for filtering enum types and enum items.
-- **Bitflags**: Bitwise-combinable enum types.
-- **Auto-Numbering**: `iota` auto-assigns values: 0, 1, 2, 3...; for bitflags: 0, 1, 2, 4, 8...
-- **External Types**: Same enum type: native in one language, external in another.
-
-### Generated Code
-
-- **Named Types**: Each enum type is defined as a named type.
-- **Typed Constants**: Each enum item is defined as a typed constant.
-- **Underlying Types**: From `int8` to `uint64`; parsing enforces the value range.
-- **Enum ↔ String Conversion**: In both directions — by default the item name, overridable in the definition.
-- **Multiple Parsing Formats**: Item name in any case, TypeName(n), decimal, and hex are all supported.
-- **Safe Parsing**: Failures trigger explicit errors or exceptions instead of silent zero values.
-- **JSON Integer Serialization**: Enum values serialize as integers in JSON.
-- **Sentinel**: Boundary markers such as `Count`, excluded from the valid values.
-- **Duplicate Values**: Multiple items can share the same integer value; all names remain valid for parsing.
-- **Bitflag Enums**: Parses and formats flag combinations, e.g., `"frost, fire"`.
-- **AllValues**: Returns the full set of valid enum values as an ordered list.
-- **IsValid**: Checks if a given value corresponds to a defined enum item.
